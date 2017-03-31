@@ -1,0 +1,201 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: #07ac72;
+}
+
+/* 头信息 */
+.header{
+	width: 1250px;
+	height: 60px;
+	margin: 0 auto;
+	border-bottom: 1px solid #efefef;
+	line-height: 60px;
+}
+.header #weatherPanel,#datePanel,#starPanel,#userPanel{
+	display: inline-block;
+	color: #999999;
+	font-size:12px;
+	float: left;
+	margin: 0 20px;
+}
+#userPanel{
+	float: right;
+}
+#hao123logo{
+	display: inline-block;
+	float: left;
+}
+/* 设为首页 */
+#setFront{
+	display: inline-block;
+	height: 40px;
+	width: 35px;
+	margin-top: 10px;
+	border-radius: 2px;
+	background-color: #07ac72;
+	color: #fff;
+	font-size: 12px;
+	line-height: 19px;
+	padding: 2px 5px;
+	box-sizing: border-box;
+	float: left;
+}
+
+/* 百度搜索面板 */
+.baiduPanel{
+	width: 90%;
+	height: 120px;
+	margin: 10px auto;
+}
+#baidu{
+	display: inline-block;
+    line-height: 60px;
+    width: 900px;
+    margin: 30px 16%;
+
+}
+#baidulogo{
+	width: 120px;
+	float: left;
+	margin-right: 20px;
+}
+#baiduInput{
+	width: 450px;
+	height: 35px;
+	float: left;
+}
+.baiduBtn{
+	width: 120px;
+	height: 39px;
+	float: left;
+}
+
+/* 可选颜色面板 */
+#color{
+	width: 120px;
+	height: 10px;
+	margin-left: 50px;
+	display: inline-block;
+}
+#color div{
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	display: inline-block;
+	margin-left: 5px;
+}
+
+/* 五种颜色可选 */
+#color1{
+	background-color: #07ac72;
+}
+#color2{
+	background-color: #33ccff;
+}
+#color3{
+	background-color: #cc0066;
+}
+#color4{
+	background-color: #ff9900;
+}
+#color5{
+	background-color: #ff66cc;
+}
+
+/* 上导航 */
+.navigator{
+	width: 1250px;
+    height: 40px;
+    margin: 10px auto 0;
+    border: 1px solid #07ac72;
+    border-top: 3px solid #07ac72;
+    border-bottom: 1px solid #efefef;
+    line-height: 40px;
+}
+.navigator a{
+	display: inline-block;
+	width: 105px;
+	text-align: center;
+	font-family: "Microsoft Yahei";
+	color: #000;
+
+}
+.navigator a:hover{
+	color:#07ac72;
+}
+#index{
+	background-color: #07ac72;
+	color: #fff;
+}
+
+/* 下导航 */
+.navigator2{
+	width: 1250px;
+    height: 40px;
+    margin: 0 auto 10px;
+    border: 1px solid #07ac72;
+    border-top: 0px;
+}
+.navigator2 a{
+	display: inline-block;
+    width: 95px;
+    text-align: center;
+    color: #000;
+    margin-top: 10px;
+    font-size: 15px;
+
+}
+.navigator2 a:hover{
+	color:#07ac72;
+}
+
+/* 主体 */
+.context{
+	width: 1250px;
+	height:400px;
+	margin: 10px auto;
+}
+/* 主体左 */
+.leftPanel{
+	width: 300px;
+	height: 300px;
+	margin-right: 10px;
+	float: left;
+	border: 1px solid #07ac72;
+}
+/* 主体 */
+.mainPanel{
+	width: 935px;
+	height: 300px;
+	float: right;
+	border: 1px solid #07ac72;
+}
+/* 主体内的内容链接 */
+dl{
+	width: 103px;
+	float: left;
+	margin: 10px 23px;
+}
+
+dd{
+	text-align: left;
+	margin: 14px auto;
+	
+}
+dt{
+	text-align: left;
+	margin: 0px auto 14px;
+	font-size: 14px;
+	line-height: 30px;
+}
+dl a{
+	text-decoration: none;
+	font-size: 14px;
+	color: #000;
+}

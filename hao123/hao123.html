@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>hao123</title>
+	<link rel="stylesheet" type="text/css" href="css/hao123.css">
+</head>
+<body>
+<div class="container">
+	<div class="header">
+		<img id="hao123logo" src="img/haologo.png">
+		<a href="#" id="setFront">设为首页</a>
+		<div id="weatherPanel">合肥 晴</div>
+		<div id="datePanel">1月23日 星期一 十二月初六</div>
+		<div id="starPanel">星座运势</div>
+		<div id="userPanel">登录 网盘 邮箱 浏览器 换肤</div>
+	</div>
+	<!--百度搜索框-->
+	<div class="baiduPanel">
+		<form action="https://www.baidu.com/s" method="GET" target="_blank">
+			<span id="baidu">
+				<img src="img/bd_logo.png" id="baidulogo">
+				<input type="text" name="wd" id="baiduInput">
+				<button class="baiduBtn">百度一下</button>
+				<div id="color">
+					<div id="color1" onclick="changeColor('#07ac72')"></div>
+					<div id="color2" onclick="changeColor('#33ccff')"></div>
+					<div id="color3" onclick="changeColor('#cc0066')"></div>
+					<div id="color4" onclick="changeColor('#ff9900')"></div>
+					<div id="color5" onclick="changeColor('#ff66cc')"></div>
+				</div>
+				
+			</span>
+		</form>
+		
+	</div>
+	<!--导航条上-->
+	<div class="navigator" id="navigator">
+		<a href="" id="index">首页</a>
+		<a href="">电视剧</a>
+		<a href="">最新电影</a>
+		<a href="">新闻头条</a>
+		<a href="">八卦娱乐</a>
+		<a href="">军事热点</a>
+		<a href="">热门游戏</a>
+		<a href="">小游戏</a>
+		<a href="">今日特价</a>
+		<a href="">特价旅游</a>
+		<a href="">合肥生活</a>
+	</div>
+	<!--导航条下-->
+	<div class="navigator2" id="navigator2">
+		<a href="" id="authority">权威推荐</a>
+		<a href="">人民网</a>
+		<a href="">央视网</a>
+		<a href="">新华网</a>
+		<a href="">国际在线</a>
+		<a href="">中国日报网</a>
+		<a href="">中国网</a>
+		<a href="">光明网</a>
+		<a href="">央广网</a>
+		<a href="">求是网</a>
+		<a href="">中国青年网</a>
+		<a href="">中国网信网</a>
+	</div>
+	<div class="context">
+		<!--主体左侧边栏-->
+		<div class="leftPanel" id="leftPanel">
+			<dl>
+				<dd><a href="">新浪</a></dd>
+				<dd><a href="">凤凰网</a></dd>
+				<dd><a href="">苏宁易购</a></dd>
+				<dd><a href="">58同城</a></dd>
+				<dd><a href="">赶集网</a></dd>
+				<dd><a href="">斗鱼TV</a></dd>
+				<dd><a href="">彩票开奖</a></dd>
+				<dd><a href="">新浪新闻</a></dd>
+			</dl>
+			<dl>
+				<dd><a href="">百度</a></dd>
+				<dd><a href="">天猫</a></dd>
+				<dd><a href="">京东商城</a></dd>
+				<dd><a href="">东方财富</a></dd>
+				<dd><a href="">世纪佳缘</a></dd>
+				<dd><a href="">唯品会</a></dd>
+				<dd><a href="">苏宁手机馆</a></dd>
+				<dd><a href="">爱奇艺高清</a></dd>
+			</dl>
+		</div>
+		<!--主体-->
+		<div class="mainPanel" id="mainPanel">
+			<dl>
+				<dd><a href="">百度</a></dd>
+				<dd><a href="">天猫</a></dd>
+				<dd><a href="">京东商城</a></dd>
+				<dd><a href="">东方财富</a></dd>
+				<dd><a href="">世纪佳缘</a></dd>
+				<dd><a href="">唯品会</a></dd>
+				<dd><a href="" id="suning1" class="strong">苏宁手机馆</a></dd>
+				<dd><a href="">爱奇艺高清</a></dd>
+			</dl>
+			<dl>
+				<dd><a href="">新浪</a></dd>
+				<dd><a href="">凤凰网</a></dd>
+				<dd><a href="">苏宁易购</a></dd>
+				<dd><a href="">58同城</a></dd>
+				<dd><a href="">赶集网</a></dd>
+				<dd><a href="">斗鱼TV</a></dd>
+				<dd><a href="" id="caipiao1" class="strong">彩票开奖</a></dd>
+				<dd><a href="">新浪新闻</a></dd>
+			</dl>
+			<dl>
+				<dd><a href="">百度</a></dd>
+				<dd><a href="">天猫</a></dd>
+				<dd><a href="">京东商城</a></dd>
+				<dd><a href="">东方财富</a></dd>
+				<dd><a href="">世纪佳缘</a></dd>
+				<dd><a href="">唯品会</a></dd>
+				<dd><a href="" id="suning2" class="strong">苏宁手机馆</a></dd>
+				<dd><a href="">爱奇艺高清</a></dd>
+			</dl>
+			<dl>
+				<dd><a href="">新浪</a></dd>
+				<dd><a href="">凤凰网</a></dd>
+				<dd><a href="">苏宁易购</a></dd>
+				<dd><a href="">58同城</a></dd>
+				<dd><a href="">赶集网</a></dd>
+				<dd><a href="">斗鱼TV</a></dd>
+				<dd><a href="" id="caipiao2" class="strong">彩票开奖</a></dd>
+				<dd><a href="">新浪新闻</a></dd>
+			</dl>
+			<dl>
+				<dd><a href="">百度</a></dd>
+				<dd><a href="">天猫</a></dd>
+				<dd><a href="">京东商城</a></dd>
+				<dd><a href="">东方财富</a></dd>
+				<dd><a href="">世纪佳缘</a></dd>
+				<dd><a href="">唯品会</a></dd>
+				<dd><a href="" id="suning3" class="strong">苏宁手机馆</a></dd>
+				<dd><a href="">爱奇艺高清</a></dd>
+			</dl>
+			<dl>
+				<dd><a href="">新浪</a></dd>
+				<dd><a href="">凤凰网</a></dd>
+				<dd><a href="">苏宁易购</a></dd>
+				<dd><a href="">58同城</a></dd>
+				<dd><a href="">赶集网</a></dd>
+				<dd><a href="">斗鱼TV</a></dd>
+				<dd><a href="" id="caipiao3" class="strong">彩票开奖</a></dd>
+				<dd><a href="">新浪新闻</a></dd>
+			</dl>
+		</div>
+	</div>
+	<div class="footer"></div>
+</div>
+</body>
+<script type="text/javascript" src="js/hao123.js"></script>
+</html>
