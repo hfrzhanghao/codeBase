@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>简易计算器</title>
+	<link rel="stylesheet" type="text/css" href="css/calc.css">
+</head>
+<body>
+<div id="container">
+	<input type="text" name="first" id="first" placeholder="数字" class="input">
+	<select id="operator" name="operator">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+	</select>
+	<input type="text" name="second" id="second" placeholder="数字" class="input">
+	<input type="button" name="submit" id="submit" value="=" onclick="calc(first.value, operator.value, second.value)">
+	<input type="text" name="result" id="result" readonly="readonly">
+</div>
+</body>
+<script type="text/javascript" src="js/calc.js"></script>
+</html>

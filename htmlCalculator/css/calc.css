@@ -1,0 +1,100 @@
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+/* 外壳 */
+.outer{
+	width: 400px;
+	height:570px;
+	margin: 50px auto;
+	border: 1px solid #333333;
+	border-radius: 10px;
+	background-color: #333333;
+}
+
+/* 屏幕 */
+.screen{
+	width: 350px;
+	height: 50px;
+	margin:15px auto;
+	border: 1px solid #333333;
+	border-radius: 10px;
+	background-color: #efefef;
+	font-size: 20px;
+	font-family: "Microsoft Yahei";
+	padding-top: 30px;
+	padding-left: 20px;
+}
+
+/* 所有面板共有属性 */
+.panel{
+	background-color: #efefef;
+}
+
+/* 其他操作面板 */
+.elseOperationPanel{
+	width: 370px;
+	height: 50px;
+	margin: 0 auto;
+	border: 1px solid #333333;
+	border-radius: 10px;
+	box-shadow: 0 0 0;
+}
+
+/* 数字面板 */
+.numberPanel{
+	width: 300px;
+	height: 375px;
+	margin: 15px;
+	border: 1px solid #333333;
+	border-radius: 10px;
+	float: left;
+}
+
+/* 操作符面板 */
+.operatorPanel{
+	width: 50px;
+	height: 375px;
+	margin:15px 15px 15px 0;
+	border: 1px solid #333333;
+	border-radius: 10px;
+	float: right;
+}
+
+/* 按钮共有属性 */
+.btn{
+	font-size: 15px;
+	color: #000;
+	font-family:"Microsoft Yahei";
+}
+
+/* 退格按钮 */
+.delBtn{
+	width: 175px;
+	height: 40px;
+	margin: 5px;
+	float: left;
+	border-radius: 10px;
+	background-color: #ff6699;
+}
+
+/* 操作符按钮 */
+.operatorBtn{
+	width: 40px;
+	margin: 5px;
+	height: 52px;
+	float: left;
+	border-radius: 10px;
+	background-color: #ffcc00;
+}
+
+/* 数字按钮 */
+.numberBtn{
+	width: 94px;
+    height: 88px;
+    float: left;
+    border-radius: 10px;
+    margin: 3px;
+	background-color: #33ccff;
+}

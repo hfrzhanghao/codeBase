@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/calc.css">
+	<title>网页计算器</title>
+</head>
+<body>
+<div class="container">
+	<div class="outer">
+		<div class="screen" id="screen">0</div>
+		<!-- 其他操作面板-->
+		<div class="panel elseOperationPanel">
+			<button id="del" class="btn delBtn">退格</button>
+			<button id="clear" class="btn delBtn">归零</button>
+		</div>
+		<!-- 操作符面板-->
+		<div class="panel operatorPanel">
+			<button id="+" class="btn operatorBtn">+</button>
+			<button id="-" class="btn operatorBtn">-</button>
+			<button id="×" class="btn operatorBtn">×</button>
+			<button id="/" class="btn operatorBtn">/</button>
+			<button id="√" class="btn operatorBtn">√</button>
+			<button id="=" class="btn operatorBtn"  onclick="calc()">=</button>
+		</div>
+		<!-- 数字和小数点面板-->
+		<div class="panel numberPanel">
+			<button id="1" class="btn numberBtn">1</button>
+			<button id="2" class="btn numberBtn">2</button>
+			<button id="3" class="btn numberBtn">3</button>
+			<button id="4" class="btn numberBtn">4</button>
+			<button id="5" class="btn numberBtn">5</button>
+			<button id="6" class="btn numberBtn">6</button>
+			<button id="7" class="btn numberBtn">7</button>
+			<button id="8" class="btn numberBtn">8</button>
+			<button id="9" class="btn numberBtn">9</button>
+			<button id="." class="btn numberBtn">.</button>
+			<button id="0" class="btn numberBtn">0</button>
+			<button id="00" class="btn numberBtn">00</button>
+		</div>
+	</div>
+</div>
+</body>
+<script type="text/javascript" src="js/calc.js"></script>
+</html>

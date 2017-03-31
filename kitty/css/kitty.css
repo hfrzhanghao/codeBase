@@ -1,0 +1,296 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+/* 整体 */
+#kitty{
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 100px;
+	position: relative;
+}
+
+/* 面部 */
+#face{
+	width: 740px;
+    height: 560px;
+    border: 18px solid #000;
+    border-top-left-radius: 325px 286px;
+    border-top-right-radius: 325px 286px;
+    border-bottom-right-radius: 307px 284px;
+    border-bottom-left-radius: 309px 284px;
+}
+
+/* 左耳 */
+#left_ear{
+	position: absolute;
+    top: -12px;
+    width: 208px;
+    height: 166px;
+    border: 18px solid #000;
+    border-top-left-radius: 143px 61px;
+    border-top-right-radius: 106px 76px;
+    border-bottom-right-radius: 78px 40px;
+    border-bottom-left-radius: 114px 147px;
+    transform: rotateZ(19deg);
+    background-color: #fff;
+}
+
+/* 左耳擦除部分 */
+#left_ear_erase{
+	background-color: #fff;
+    width: 273px;
+    height: 143px;
+    border-top-left-radius: 143px 61px;
+    border-top-right-radius: 106px 76px;
+    border-bottom-right-radius: 78px 40px;
+    border-bottom-left-radius: 114px 147px;
+    transform: rotateZ(-50deg);
+    margin-left: 43px;
+    margin-top: 34px;
+}
+
+/* 右耳 */
+#right_ear{
+	position: absolute;
+    top: -12px;
+    left: 531px;
+    width: 208px;
+    height: 166px;
+    border: 18px solid #000;
+    border-top-left-radius: 143px 61px;
+    border-top-right-radius: 106px 76px;
+    border-bottom-right-radius: 78px 40px;
+    border-bottom-left-radius: 114px 147px;
+    transform: rotateZ(97deg);
+    background-color: #fff;
+}
+
+/* 右耳擦除部分 */
+#right_ear_erase{
+	background-color: #fff;
+    width: 273px;
+    height: 143px;
+    border-top-left-radius: 143px 61px;
+    border-top-right-radius: 106px 76px;
+    border-bottom-right-radius: 78px 40px;
+    border-bottom-left-radius: 114px 147px;
+    transform: rotateZ(-50deg);
+    margin-left: 43px;
+    margin-top: 34px;
+}
+
+/* 蝴蝶结 */
+#bowknot_div{
+    position: absolute;
+    top: 20px;
+    left: 455px;
+    transform: rotateZ(30deg);
+    animation: bow_anm 1s linear infinite;
+}
+
+/* 蝴蝶结动画 */
+@-webkit-keyframes bow_anm{
+    0% {
+        -webkit-transform: rotateZ(30deg);
+    }
+	25% {
+		-webkit-transform: rotateZ(33deg); 
+	}
+
+	50% {
+		-webkit-transform: rotateZ(30deg); 
+	}
+
+	75% {
+		-webkit-transform: rotateZ(27deg); 
+	}
+
+	100% {
+		-webkit-transform: rotateZ(30deg); 
+	}
+
+}
+
+/* 蝴蝶结范围 */
+#bowknot{
+    position: relative;
+    width: 353px;
+    height: 174px;
+    background-color: transparent;
+}
+
+/* 蝴蝶结中心大圆 */
+#center{
+    position: absolute;
+    margin: auto;
+    width: 90px;
+    height: 90px;
+    background-color: red;
+    border: 12px solid #000;
+    border-radius: 65px;
+    z-index: 3;
+    top: 30px;
+    right: 119px;
+}
+
+/* 蝴蝶结中心靠左小圆 */
+#center_left{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border: 12px solid #000;
+    border-radius: 30px;
+    z-index: 2;
+    top: 59px;
+    left: 90px;
+}
+
+/* 蝴蝶结中心靠右小圆 */
+#center_right{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border: 12px solid #000;
+    border-radius: 30px;
+    z-index: 2;
+    top: 59px;
+    right: 90px;
+}
+
+/* 蝴蝶结左翼 */
+#bo_left{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border: 12px solid #000;
+    border-radius: 30px;
+    left: 0px;
+    border-bottom-right-radius: 90px;
+    border-top-right-radius: 90px;
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+}
+
+/* 蝴蝶结右翼 */
+#bo_right{
+    position: absolute;
+    width: 150px;
+    background-color: red;
+    height: 150px;
+    border: 12px solid #000;
+    border-radius: 30px;
+    right: 0px;
+    border-bottom-right-radius: 60px;
+    border-top-right-radius: 60px;
+    border-top-left-radius: 90px;
+    border-bottom-left-radius: 90px;
+}
+
+/* 左眼 */
+#left_eye{
+    width: 54px;
+    height: 71px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    top: 340px;
+    left: 192px;
+    animation: blink 2s linear infinite;
+}
+
+/* 右眼 */
+#right_eye{
+    width: 54px;
+    height: 71px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    top: 340px;
+    left: 529px;
+    animation: blink 2s linear infinite;
+}
+
+/* 眨眼动画 */
+@keyframes blink{
+	5% {
+		transform: scaleY(0.1);
+	}
+	10%{
+		transform: scaleY(1);
+	}
+	
+}
+
+/* 鼻子 */
+#nose{
+	position: absolute;
+    width: 57px;
+    height: 40px;
+    background-color: yellow;
+    border: 15px solid #000;
+    border-radius: 50%;
+    top: 408px;
+    left: 343px;
+}
+
+/* 左胡须 */
+#mustache_left {
+	position: absolute;
+    top: 345px;
+    left: -43px;
+    transform: rotateZ(0deg);
+}
+
+/* 右胡须 */
+#mustache_right {
+    position: absolute;
+    top: 345px;
+    left: 639px;
+    transform: rotateZ(0deg) scaleX(-1);
+}
+
+/* 上胡须 */
+.up{
+    width: 150px;
+    height: 25px;
+    background-color: #000;
+    border-bottom-left-radius: 40px 10px;
+    border-bottom-right-radius: 40px 10px;
+    border-top-left-radius: 173px 20px;
+    border-top-right-radius: 40px 20px;
+    transform: rotateZ(0deg);
+    margin-bottom: 50px;
+}
+
+/* 中胡须 */
+.middle{
+	margin-left: 20px;
+	width: 100px;
+    height: 25px;
+    background-color: #000;
+    border-bottom-left-radius: 40px 10px;
+    border-bottom-right-radius: 40px 10px;
+    border-top-left-radius: 173px 20px;
+    border-top-right-radius: 40px 20px;
+    transform: rotateZ(-10deg);
+     margin-bottom: 50px;
+}
+
+/* 下胡须 */
+.down{
+	margin-left: 30px;
+	width: 150px;
+    height: 25px;
+    background-color: #000;
+    border-bottom-left-radius: 40px 10px;
+    border-bottom-right-radius: 40px 10px;
+    border-top-left-radius: 173px 20px;
+    border-top-right-radius: 40px 20px;
+    transform: rotateZ(-15deg);
+}

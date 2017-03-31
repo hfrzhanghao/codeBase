@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>后台管理界面</title>
+        <!-- Bootstrap3.3.5 CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <style>
+            .panel-group{max-height:770px;overflow: auto;}
+            .leftMenu{margin:10px;margin-top:5px;}
+            .leftMenu .panel-heading{font-size:14px;padding-left:20px;height:36px;line-height:36px;color:white;position:relative;cursor:pointer;}
+            .leftMenu .panel-heading span{position:absolute;right:10px;top:12px;}
+            .leftMenu .menu-item-left{padding: 2px; background: transparent; border:1px solid transparent;border-radius: 6px;}
+            .leftMenu .menu-item-left:hover{background:#C4E3F3;}
+        </style>
+    </head>
+
+    <body>
+    	<!-- 页面上方的巨幕 -->
+    	<div class="jumbotron">
+    		<div class="container">
+    			<h3>欢迎使用Bootstrap后台管理系统</h3>
+    		</div>
+    	</div>
+    		<!-- 左边下拉菜单 -->
+            <div class="col-md-2">
+                <div class="panel-group table-responsive" role="tablist">
+                    <div class="panel panel-primary leftMenu">
+                        <!-- 利用data-target指定要折叠的分组列表 -->
+                        <div class="panel-heading" id="collapseListGroupHeading1" data-toggle="collapse" data-target="#collapseListGroup1" role="tab" >
+                            <h4 class="panel-title">
+                                分组1
+                                <span class="glyphicon glyphicon-chevron-up"></span>
+                            </h4>
+                        </div>
+                        <!-- .panel-collapse和.collapse标明折叠元素 .in表示要显示出来 -->
+                        <div id="collapseListGroup1" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="collapseListGroupHeading1">
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                <!-- 利用data-target指定URL -->
+                                <button class="menu-item-left" data-target="test2.html">
+                                    <span class="glyphicon glyphicon-triangle-right"></span>分组项1-1
+                                </button>
+                              </li>
+                              <li class="list-group-item">
+                                <button class="menu-item-left">
+                                    <span class="glyphicon glyphicon-triangle-right"></span>分组项1-2
+                                </button>
+                              </li>
+                              <li class="list-group-item">
+                                <button class="menu-item-left">
+                                    <span class="glyphicon glyphicon-triangle-right"></span>分组项1-3
+                                </button>
+                              </li>
+                              <li class="list-group-item">
+                                <button class="menu-item-left">
+                                    <span class="glyphicon glyphicon-triangle-right"></span>分组项1-4
+                                </button>
+                              </li>
+                              
+                            </ul>
+                        </div>
+                    </div><!--panel end-->
+                    <div class="panel panel-primary leftMenu">
+                        <div class="panel-heading" id="collapseListGroupHeading2" data-toggle="collapse" data-target="#collapseListGroup2" role="tab" >
+                            <h4 class="panel-title">
+                                分组2
+                                <span class="glyphicon glyphicon-chevron-down"></span>
+                            </h4>
+                        </div>
+                        <div id="collapseListGroup2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="collapseListGroupHeading2">
+                            <ul class="list-group">
+                              <li class="list-group-item">
+                                <button class="menu-item-left">
+                                    <span class="glyphicon glyphicon-triangle-right"></span>分组项2-1
+                                </button>
+                              </li>
+                              <li class="list-group-item">
+                                <button class="menu-item-left">
+                                    <span class="glyphicon glyphicon-triangle-right"></span>分组项2-2
+                                </button>
+                              </li>
+                              <li class="list-group-item">
+                                <button class="menu-item-left">
+                                    <span class="glyphicon glyphicon-triangle-right"></span>分组项2-3
+                                </button>
+                              </li>
+                              <li class="list-group-item">
+                                <button class="menu-item-left">
+                                    <span class="glyphicon glyphicon-triangle-right"></span>分组项2-4
+                                </button>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <!-- 表格 -->
+            <div class="col-md-10">
+                <table class="table">
+                	<thead>
+                		<tr>
+                			<th>First name</th>
+                			<th>Last name</th>
+                			<th>User name</th>
+                		</tr>
+                	</thead>
+                	<tbody>
+                		<tr>
+                			<td>Cyril</td>
+                			<td>Zhang</td>
+                			<td>hfrzhanghao</td>
+                		</tr>
+                		<tr>
+                			<td>Mike</td>
+                			<td>Lee</td>
+                			<td>Huhha</td>
+                		</tr>
+                		<tr>
+                			<td>Lucy</td>
+                			<td>Wang</td>
+                			<td>Xinyi</td>
+                		</tr>
+                		<tr>
+                			<td>Bacon</td>
+                			<td>Zhang</td>
+                			<td>tihot</td>
+                		</tr>
+                		<tr>
+                			<td>hao</td>
+                			<td>Zhang</td>
+                			<td>hfrzhanghao</td>
+                		</tr>
+                		<tr>
+                			<td>Cyril</td>
+                			<td>Zhang</td>
+                			<td>hfrzhanghao</td>
+                		</tr>
+                	</tbody>
+				</table>
+				<table class="table">
+                	<thead>
+                		<tr>
+                			<th>First name</th>
+                			<th>Last name</th>
+                			<th>User name</th>
+                		</tr>
+                	</thead>
+                	<tbody>
+                		<tr>
+                			<td>Cyril</td>
+                			<td>Zhang</td>
+                			<td>hfrzhanghao</td>
+                		</tr>
+                		<tr>
+                			<td>Mike</td>
+                			<td>Lee</td>
+                			<td>Huhha</td>
+                		</tr>
+                		<tr>
+                			<td>Lucy</td>
+                			<td>Wang</td>
+                			<td>Xinyi</td>
+                		</tr>
+                		<tr>
+                			<td>Bacon</td>
+                			<td>Zhang</td>
+                			<td>tihot</td>
+                		</tr>
+                		<tr>
+                			<td>hao</td>
+                			<td>Zhang</td>
+                			<td>hfrzhanghao</td>
+                		</tr>
+                		<tr>
+                			<td>Cyril</td>
+                			<td>Zhang</td>
+                			<td>hfrzhanghao</td>
+                		</tr>
+                	</tbody>
+				</table>
+            </div>
+        <script src="js/jquery-3.1.1.min.js "></script>
+        <script src="js/bootstrap.min.js "></script>
+        <script>
+        $(function(){
+            $(".panel-heading").click(function(e){
+                /*切换折叠指示图标*/
+                $(this).find("span").toggleClass("glyphicon-chevron-down");
+                $(this).find("span").toggleClass("glyphicon-chevron-up");
+            });
+        });
+        </script>
+    </body>
+
+</html>
