@@ -1,0 +1,19 @@
+table {
+	margin: 10px auto;
+	width: 800px;
+	text-align: center;
+	border-collapse: collapse;
+	line-height: 40px;
+}
+
+table,tr,td,th {
+	border: 1px solid #ccc;
+}
+
+th,td {
+	width: 40px;
+}
+
+.display {
+	text-align:center;
+}

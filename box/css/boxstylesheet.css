@@ -1,0 +1,38 @@
+*{
+	margin:0;
+	padding: 0;
+}
+#xiezi{
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+	overflow: auto;
+}
+
+#xiehe{
+	width: 100px;
+	height:100px;
+	background-color: aqua;
+	margin: 50px;
+	padding: 10px;
+	border: 5px solid red;
+	box-shadow: 5px 5px 10px #ccc;
+}
+
+#wiredxiezi{
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+	overflow: auto;
+}
+
+#wiredxiehe{
+	width: 130px;
+	height: 130px;
+	background-color: aqua;
+	margin: 50px;
+	padding: 10px;
+	border: 5px solid red;
+	box-sizing: border-box;
+	box-shadow: 5px 5px 10px #ccc;
+}

@@ -1,0 +1,121 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#wrapper{
+	margin:300px auto 0 auto;
+	width: 306px;
+	height: 306px;
+}
+
+#box{
+	transform-style: preserve-3d;
+	animation: myanm 20s linear infinite;
+}
+
+@keyframes myanm {
+	from {  
+        -webkit-transform: translateZ(-10em) rotateX(0) rotateY(0deg);  
+        transform: translateZ(-10em) rotateX(0) rotateY(0deg);  
+    }  
+  
+    to {  
+        -webkit-transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);  
+        transform: translateZ(-10em) rotateX(360deg) rotateY(360deg);  
+    } 
+}
+
+#box div{
+	width: 306px;
+	height: 306px;
+	position: absolute;
+}
+
+#a{
+	transform: translateZ(153px);
+	
+}
+
+#a div{
+	width: 100px;
+	height: 100px;
+	float: left;
+	position: static;
+	border-radius: 5px;
+	background-color: aqua;
+	border: 1px solid #000;
+}
+
+#b{
+	transform: translateZ(-153px);
+}
+
+#b div{
+	width: 100px;
+	height: 100px;
+	float: left;
+	position: static;
+	border-radius: 5px;
+	background-color: yellow;
+	border: 1px solid #000;
+}
+
+#c{
+	transform: translateX(-153px) rotateY(90deg);
+}
+
+#c div{
+	width: 100px;
+	height: 100px;
+	float: left;
+	position: static;
+	border-radius: 5px;
+	background-color: red;
+	border: 1px solid #000;
+}
+
+
+#d{
+	transform: translateX(153px) rotateY(90deg);
+}
+
+#d div{
+	width: 100px;
+	height: 100px;
+	float: left;
+	position: static;
+	border-radius: 5px;
+	background-color: blue;
+	border: 1px solid #000;
+}
+
+
+#e{
+	transform: translateY(153px) rotateX(90deg);
+}
+
+#e div{
+	width: 100px;
+	height: 100px;
+	float: left;
+	position: static;
+	border-radius: 5px;
+	background-color: green;
+	border: 1px solid #000;
+}
+
+
+#f{
+	transform: translateY(-153px) rotateX(90deg);
+}
+
+#f div{
+	width: 100px;
+	height: 100px;
+	float: left;
+	position: static;
+	border-radius: 5px;
+	background-color: purple;
+	border: 1px solid #000;
+}

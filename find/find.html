@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>数组操作</title>
+	<link rel="stylesheet" type="text/css" href="css/find.css">
+</head>
+<body>
+<div class="container">
+	<input type="text" name="array" id="array" placeholder="每个字符以英文逗号分隔,如 a,r,a,t,y">
+	<input type="button" name="submit" id="submit" value="提交" onclick="find()"><br>
+	<table>
+		<thead>
+			<tr>
+				<td>统计项</td>
+				<td>结果</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>出现最多的字母</td>
+				<td id="letter"></td>
+			</tr>
+			<tr>
+				<td>出现次数</td>
+				<td id="count"></td>
+			</tr>
+			<tr>
+				<td>出现的索引</td>
+				<td id="index"></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+</body>
+<script type="text/javascript" src="js/find.js"></script>
+</html>

@@ -1,0 +1,18 @@
+.container{
+	text-align: center;
+}
+#array{
+	width: 300px;
+}
+table{
+	margin: 10px auto;
+	border-collapse: collapse;
+	line-height: 40px;
+	width: 500px;
+}
+table,td,th,tr{
+	border: 1px solid #ccc;
+}
+td{
+	width: 250px;
+}

@@ -1,0 +1,60 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+header{
+	height: 100px;
+	background-color: #ccffff;
+	margin-bottom: 10px;
+
+}
+
+footer{
+	height: 100px;
+	background-color: #ccffff;
+	text-align: center;
+	line-height: 100px;
+	margin-top: 10px;
+}
+
+/* 中间，超出部分隐藏 */
+.article{
+	overflow: hidden;
+}
+
+/* 主体部分 等高处理*/
+.middle{
+	float: left;
+	width: 100%;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+}
+
+/* 主体内容 */
+.inner{
+	background-color: #ccffcc;
+	margin:0 410px 0 310px;
+}
+
+/* 左翼，采用了负边距，等高处理 */
+.left{
+	width: 300px;
+	float: left;
+	margin-left: -100%;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+	background-color: #66ccff;
+}
+
+/* 右翼，采用了负边距，等高处理 */
+.right{
+	float: left;
+	width: 400px;
+	background-color: #66ccff;
+	margin-left:-400px;
+	margin-bottom: -9999px;
+	padding-bottom: 9999px;
+	
+}
+

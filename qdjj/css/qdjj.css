@@ -1,0 +1,73 @@
+*{
+	font-size:13px;
+}
+
+body{
+	background-color:#b0e2ff;
+}
+
+span {
+	color: blue;
+}
+
+label{
+	display: inline-block;
+}
+
+.label {
+	float: right;
+}
+
+input,textarea {
+	margin: 2px;
+	resize: none;
+}
+
+#wrapper {
+	background-color: white;
+	width: 800px;
+	margin: 0 auto;
+	text-align: -webkit-center;
+	border-radius: 60px;
+}
+
+#tdSubmit {
+	text-align: center;
+	height: 50px;
+}
+
+.star {
+	color: red;
+}
+
+.headTable {
+	width: 700px;
+}
+
+.headTable tr td{
+	border:0px;
+}
+
+#nav{
+	float: right;
+}
+
+.headTableTd{
+	vertical-align: bottom;
+}
+
+.splitRow {
+	background-color: #ededed;
+	height: 25px;
+	font-size: 14px;
+}
+
+.mainTable {
+	width: 700px;
+	border-collapse: collapse;
+}
+
+.mainTable tr,td{
+	border: 1px solid #ccc;
+	width: 70px;
+}
