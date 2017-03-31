@@ -1,0 +1,111 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+
+html{
+	height: 100%;
+	font-size: 62.5%;
+	font-family: "Microsoft Yahei";
+}
+body{
+	height: 100%;
+}
+.container{
+	height: 100%;
+	width: 100%;
+}
+/* 头部链接 */
+header{
+	background:#3e98f0 url(../img/bg-news-logo_344ce44.png) no-repeat center center;
+	background-size: 6rem;
+	height: 5rem;
+	border-bottom: 1px solid #5dabf0
+}
+header a{
+    color: #fff;
+    display: block;
+    width: 5rem;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 13px;
+}
+header a:nth-child(1),
+header a:nth-child(2){
+	float: left;
+}
+header a:nth-child(3),
+header a:nth-child(4){
+	float: right;
+}
+
+/* 导航部分 */
+nav{
+	background-color: #3e98f0;
+}
+nav ul{
+	font-size: 0;
+}
+nav li{
+	display: inline-block;
+	text-align: center;
+	height: 3rem;
+	line-height: 3rem;
+}
+nav ul i{
+	display: inline-block;
+	border-right: 1px solid #5dabf0;
+	float: right;
+	height:2rem;
+	position: relative;
+	top:0.5rem;
+}
+nav a{
+	color: #fff;
+	font-size: 1.44rem;
+}
+
+/* 新闻列表部分 */
+.newsLists{
+	margin: 1rem 0 0;
+	padding: 0 1rem;
+}
+
+.new{
+	display: flex;
+	margin-top: 1rem;
+	border-bottom: 1px solid #efefef;
+}
+.newImg{
+	flex: 1;
+}
+.newImg img{
+	width: 100%;
+}
+.newContent{
+	flex: 2;
+	padding: 0 0.8rem;
+}
+
+.newContent h1{
+	font-size: 1.2rem;
+	margin: 1rem 0;
+}
+
+.newContent span{
+	display: inline-block;
+}
+
+.newContent span:nth-child(2){
+	margin-left: 0.8rem;
+	border: 1px solid #ff0000;
+	color:#ff0000;
+	border-radius: 3px;
+}
+
