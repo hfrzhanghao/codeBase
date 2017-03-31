@@ -1,0 +1,160 @@
+@boardHeight : 690px;
+@boardWidth : 1200px;
+@mainPanelHeight : @boardHeight*0.4;
+@routePanelHeight : @boardHeight*0.45;
+@psInfoPanelHeight: @boardHeight*0.15;
+@red : #CF181D;
+@white:#fff;
+@black:#000;
+@purple:#5F5B72;
+
+/* 容器 */
+.container{
+	width: @boardWidth;
+	height: @boardHeight;
+	margin: 50px;
+	border: 1px solid #ccc;
+	border-radius: 20px;
+	overflow: hidden;
+	box-shadow: 5px 5px 5px #efefef;
+}
+
+/* p元素样式函数 */
+.p(@line-height, @color, @font-size, @display:inline-block){
+	line-height: @line-height;
+	color:@color;
+	font-size: @font-size;
+	display: @display;
+}
+
+/* 主信息面板 */
+.mainInfoPanel{
+	height:@mainPanelHeight;
+	/* 左部 */
+	.mainLeft{
+		float: left;
+		width: 40%;
+		height: @mainPanelHeight;
+		/* 号码 */
+		.No{
+			width: 100%;
+			height: @mainPanelHeight * 0.8;
+			background-color: @red;
+			text-align: center;
+			p{
+				.p(@mainPanelHeight * 0.8, @white, 200px);
+			}
+		}
+		/* 首末时刻 */
+		.firstLastTime{
+			width: 100%;
+			height: @mainPanelHeight * 0.2;
+			text-align: center;
+			p{
+				.p(@mainPanelHeight * 0.2, @black, 40px);
+			}
+		}
+	}
+	/* 右部 */
+	.mainRight{
+		float: right;
+		width: 60%;
+		height: @mainPanelHeight;
+		/* 首末站中文 */
+		.firstLastStationZh{
+			width: 100%;
+			height: @mainPanelHeight * 0.4;
+			text-align: center;
+			p{
+				.p(130px, @purple, 60px);
+			}
+		}
+		/* 首末站英文 */
+		.firstLastStationEn{
+			width: 100%;
+			height: @mainPanelHeight * 0.2;
+			text-align: center;
+			p{
+				.p(@mainPanelHeight * 0.1, @purple, 30px);
+			}
+		}
+		/* 本站名称 */
+		.thisStation{
+			width: 100%;
+			height: @mainPanelHeight * 0.4;
+			text-align: center;
+			p{
+				.p(@mainPanelHeight * 0.3, @red, 100px);
+			}
+		}
+	}
+}
+
+/* 途径站面板 */
+.routePanel{
+	width: 100%;
+	height: @routePanelHeight;
+	background-color: @purple;
+	/* 途径站列表 */
+	.route{
+		width: 100%;
+		text-align: center;
+		li{
+			display: inline-block;
+			height: @routePanelHeight;
+			float: left;
+			width: 60px;
+			margin-left: 20px;
+			&:nth-child(1){
+				margin-left: 40px;
+			}
+			/* 当前站的样式 */
+			&:nth-child(7){
+				background-color: lighten(@purple, 20%);
+			}
+			/* 各站文字样式 */
+			p{
+				width: 32px;
+				color: @white;
+				font-size: 28px;
+				margin-left: 15px;
+				margin-top: 20px;
+			}
+		}
+	}
+}
+
+/* 底部信息 */
+.psInfoPanel{
+	width: 100%;
+	height: @psInfoPanelHeight;
+	text-align: center;
+	/* 文字信息 */
+	p{
+		.p(@psInfoPanelHeight * 0.4, @black, 30px);
+	}
+	/* 箭头 */
+	.arrow{
+		width: 100%;
+		/* 箭头尾部 */
+		.line{
+			width: 70%;
+			height: 10px;
+			background-color: @red;
+			float: left;
+			margin-left: 80px;
+		}
+		/* 箭头顶端样式 */
+		.arrowHead{
+			width: 0;
+			height: 0;
+			background-color: @red;
+			float:left;
+			margin-top: -20px;
+			border-left: 150px solid #CF181D;
+			border-top: 30px solid #fff;
+			border-bottom: 0px solid #CF181D;
+			border-right: 0px solid #fff;
+		}
+	}
+}
