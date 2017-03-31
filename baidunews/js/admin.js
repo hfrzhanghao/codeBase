@@ -1,4 +1,5 @@
 $(document).ready(function() {
+
     var newsTable = $('#newsTable tbody');
 
     $('.time-picker').datetimepicker({
