@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<title>百度一下,你就知道</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/baidu-icon.png">
+	<link rel="stylesheet" type="text/css" href="css/baiducss.css" media="screen and (min-width:800px)">
+	<link rel="stylesheet" type="text/css" href="css/baidu-adp.css" media="screen and (max-width:800px)">
+	<!--[if lt IE9]>
+		<script src="http://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<div id="wrapper">
+		
+		<div id="skin_select" class="skin_select">
+			<div id="skin_class" class="skin_class">
+				<div class="skin_class_panel">
+					<a class="skin_class_sel">热门</a>
+					<a >游戏</a>
+					<a >卡通</a>
+					<a >明星</a>
+					<a >风景</a>
+				</div>
+				<div class="slideUp">收起</div>
+			</div>
+			<div class="skin_panel_all">
+				<div class="skin_panel">
+					<img src="img/wu.jpg" id="wu">
+					<img src="img/0504fbb7f67c4ed1865d227651ce2821.jpg">
+					<img src="img/03957_rockefellerview_2560x1600.jpg">
+					<img src="img/03966_upondescent_2560x1440.jpg">
+					<img src="img/04023_clearskieswithachanceofprotonbombardment_2560x1440.jpg">
+					<img src="img/04093_whimsical_2560x1440.jpg">
+				</div>
+				
+				<div class="yulan">
+					<div class="pre">
+						<div class="skin_preview_bg"></div>
+						<div class="skin_preview"></div>
+					</div>
+					<p class="yulan_des">背景皮肤效果预览</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="header">
+			<div id="all_weather">
+				<div id="weather"></div>
+				<div id="weather_dt">
+					<div id="today">
+						<p>03月09日 农历二月十二 </p>
+						<a href="">未来7天天气</a>
+						<a class="wea_set">设置</a>
+					</div>
+					<div class="all_future">
+						<div class="future">
+							<p>今天 周四</p>
+							<img src="img/5.png">
+							<p>19°C</p>
+							<p>多云</p>
+							<p>南风3-4级</p>
+						</div>
+						<div class="future">
+							<p>明天 周五</p>
+							<img src="img/5.png">
+							<p>19°C</p>
+							<p>多云</p>
+							<p>南风3-4级</p>
+						</div>
+						<div class="future">
+							<p>周六</p>
+							<img src="img/5.png">
+							<p>19°C</p>
+							<p>多云</p>
+							<p>南风3-4级</p>
+						</div>
+						<div class="future">
+							<p>周日</p>
+							<img src="img/5.png">
+							<p>19°C</p>
+							<p>多云</p>
+							<p>南风3-4级</p>
+						</div>
+						<div class="future">
+							<p>周一</p>
+							<img src="img/5.png">
+							<p>19°C</p>
+							<p>多云</p>
+							<p>南风3-4级</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="other">
+				<a href="">宝箱</a>
+				<a id="skin">换肤</a>
+				<a href="">消息</a>
+			</div>
+			
+			<!-- 导航栏开始 -->
+			<div class="nav">
+				<a class="a" href="http://news.baidu.com/">新闻</a>
+				<a class="a" href="http://www.hao123.com/">hao123</a>
+				<a class="a" href="http://map.baidu.com/">地图</a>
+				<a class="a" href="http://v.baidu.com/">视频</a>
+				<a class="a" href="http://tieba.baidu.com/">贴吧</a>
+				<a class="a1" href="http://i.baidu.com/">登录</a>
+				<div class="setting_div">设置
+					<!-- 弹出设置框 -->
+					<div id="settings" class="settings">
+						<div class="narrow">
+						</div>
+						<a href="http://news.baidu.com/">搜索设置</a><br>
+						<a href="http://news.baidu.com/">高级搜索</a><br>
+						<a href="http://news.baidu.com/">关闭预测</a><br>
+						<a href="http://news.baidu.com/">搜索历史</a><br>
+					</div>
+				</div>
+				<!-- 弹出更多产品侧边栏 -->
+				<div class="more_div">更多产品
+					<div id="sidebar" class="sidebar">
+						<div>
+							<img src="img/music.png"><br>
+							<a href="http://news.baidu.com/">音乐</a><br>
+						</div>
+						<div>
+							<img src="img/image.png"><br>
+							<a href="http://news.baidu.com/">图片</a><br>
+						</div>
+						<div>
+							<img src="img/zhidao.png"><br>
+							<a href="http://news.baidu.com/">知道</a><br>
+						</div>
+						<div>
+							<img src="img/wenku.png"><br>
+							<a href="http://news.baidu.com/">文库</a><br>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 导航栏结束 -->
+		</div>
+
+		<a href="https://m.baidu.com/usrprofile?action=home&model=user&ori=index" id="weather-bar"></a>
+		<a href="https://m.baidu.com/usrprofile?action=home&model=user&ori=index" id="login-bar"></a>
+
+		<div id="content" class="content">
+			<!-- baidu logo主图 -->
+			<div id="baidu_logo">
+				<img id="img_logo" src="img/bd_logo1_31bdc765.png" alt="百度一下">
+			</div>
+			
+			<!-- form表单 -->
+			<form id="form" action="https://www.baidu.com/s" method="GET" target="_blank">
+				<span id="btn_search"><button id="btn" type="submit">百度一下</button></span>
+				<span id="search" ><input id="wd_search" type="text" name="wd"><span id="pic_search"></span></span>
+				
+			</form>
+			
+			<!-- 手机端显示的图片链接 -->
+			<div class="img-link-panel">
+				<a href="http://news.baidu.com/" class="img-link"><i class="first"></i><span>关注</span></a>
+				<a href="http://news.baidu.com/" class="img-link"><i class="second"></i><span>新闻</span></a>
+				<a href="http://news.baidu.com/" class="img-link"><i class="third"></i><span>小说</span></a>
+				<a href="http://news.baidu.com/" class="img-link"><i class="fourth"></i><span>视频</span></a>
+				<a href="http://news.baidu.com/" class="img-link"><i class="fifth"></i><span>糯米</span></a>
+				<a href="http://news.baidu.com/" class="img-link"><i class="sixth"></i><span>地图</span></a>
+			</div>
+		</div>
+
+		<div id="select-panel">
+			<ul id="select-head">
+				<li class="tabIn" id="my-focus">我的关注</li>
+				<li>推荐</li>
+				<li>导航</li>
+				<li>视频</li>
+			</ul>
+
+			<div id="select-body">
+				<div id="real-content">
+					
+				</div>
+			</div>
+		</div>
+
+		<div id="to-top">
+			<div id="first-div"></div>
+			<div id="second-div"></div>
+		</div>
+
+		<div id="to-top-des">
+			回到顶部
+		</div>
+		
+		<!-- 手机端显示的图片新闻 -->
+		<div class="img_news_panel">
+			<div class="img_news_line">
+				<p>图片新闻</p>
+				<a href="http://news.baidu.com/" class="img_new"><img src="img/lizi.JPEG"></a>
+				<a href="http://news.baidu.com/" class="img_new"><img src="img/lizi.JPEG"></a>
+				<a href="http://news.baidu.com/" class="img_new"><img src="img/lizi.JPEG"></a>
+				<p class="subtitle">这里是今天的图片新闻</p>
+			</div>
+			<hr>
+			<div class="img_news_line">
+				<p>热点新闻</p>
+				<a href="http://news.baidu.com/" class="img_new"><img src="img/lizi.JPEG"></a>
+				<a href="http://news.baidu.com/" class="img_new"><img src="img/lizi.JPEG"></a>
+				<a href="http://news.baidu.com/" class="img_new"><img src="img/lizi.JPEG"></a>
+				<p class="subtitle">这里是今天的热点新闻</p>
+			</div>
+			<hr>
+			<div class="img_news_line">
+				<p>科技新闻</p>
+				<a href="http://news.baidu.com/" class="img_new"><img src="img/lizi.JPEG"></a>
+				<a href="http://news.baidu.com/" class="img_new"><img src="img/lizi.JPEG"></a>
+				<a href="http://news.baidu.com/" class="img_new"><img src="img/lizi.JPEG"></a>
+				<p class="subtitle">这里是今天的科技新闻</p>
+			</div>
+		</div>
+		<!-- 页尾 -->
+		<div class="footer">
+			手机百度二维码
+			<div id="shouji_baidu">
+				<div id="qr_code">
+					<img src="img/zbios_efde696.png">
+				</div>
+				<p>手机百度</p>
+			</div>
+			页尾链接
+			<a class="setfrontpage" href="https://www.baidu.com/cache/sethelp/help.html">把百度设为主页</a>
+			<a class="a2" href="http://home.baidu.com/">关于百度</a>
+			<a class="a2" href="http://ir.baidu.com/">About Baidu</a>
+			<a class="a2" href="http://e.baidu.com/?refer=888">百度推广</a><br>©2017 Baidu
+			<a class="a3" href="http://www.baidu.com/duty/">使用百度前必读</a>
+			<a class="a3" href="http://jianyi.baidu.com/">意见反馈</a>&nbsp;京ICP证030173号
+			<a class="a3" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">京公网安备11000002000001号</a>
+		</div>
+		
+	</div>
+	<script type="text/javascript" src="js/jquery-2.1.1 .js"></script>
+	<script type="text/javascript" src="js/baidu.js"></script>
+</body>
+</html>

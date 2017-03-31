@@ -1,0 +1,592 @@
+html, body{ margin:0; height:100%; }
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body {
+	font:12px arial;
+	margin:0px;
+	height: 80%;
+}
+/* 空皮肤 */
+#wu{
+	border: 1px solid #ccc;
+	box-shadow: 0 0 5px #ccc;
+}
+/* 皮肤指针样式 */
+#skin{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+/* 皮肤相关样式 */
+.skin_select{
+	background-color: #fff;
+	position: absolute;
+	width: 100%;
+	z-index: 1000;
+	box-shadow: 0 0 5px #999;
+	text-align: center;
+	display: none;
+}
+/* 收起 */
+.slideUp{
+	display: inline-block;
+	line-height: 30px;
+	color: #3385ff;
+	font-family: "Microsoft Yahei";
+	cursor: pointer;
+}
+/* 皮肤分类 */
+.skin_class{
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid #ccc;
+	display: inline-block;
+}
+/* 皮肤总面板 */
+.skin_panel_all{
+	text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/* 皮肤分类面板 */
+.skin_class_panel{
+	display: inline-block;
+	width: 700px;
+	text-align: left;
+}
+/* 皮肤链接 */
+.skin_class_panel a{
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 13px;
+    width: 55px;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+}
+/* 被选中的皮肤分类 */
+.skin_class_sel{
+	background-color: #3385ff;
+	color: #fff;
+	height: 30px;
+	width: 40px;
+}
+.skin_panel{
+	width: 630px;
+    display: inline-block;
+    border-right: 1px solid #ccc;
+}
+/* 具体皮肤图片 */
+.skin_panel img{
+	height: 100px;
+    width: 180px;
+    cursor: pointer;
+}
+/* 总预览 */
+.yulan{
+    display: inline-block;
+    top: -40px;
+    left: 40px;
+    position: relative;
+
+}
+.pre{
+	position: relative;
+	height: 124px;
+	width: 197px;
+	display: inline-block;
+}
+/* 预览 */
+.skin_preview{
+    height: 124px;
+    width: 197px;
+    display: inline-block;
+    background: url(../img/skin_preview.png) 0 0 no-repeat;
+    background-position: -193px 0;
+    background-size: 590px 120px;
+    position: relative;
+}
+/* 预览图 */
+.skin_preview_bg{
+    height: 120px;
+    width: 187px;
+    display: inline-block;
+    background-position: -193px 0;
+    background-size: 590px 120px;
+    position: absolute;
+    left: 7px;
+    margin-top: 0px;
+}
+/* 预览字样 */
+.yulan_des{
+	color: #999;
+
+}
+
+.header {
+	margin: 10px 0 0 0;
+	border-bottom: 1px solid #e6e6e6;
+	background-color: #fff;
+	height: 24px;
+}
+
+#other{
+	display: inline-block;
+}
+
+#other a {
+	color: #999;
+	display: inline-block;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.header .nav {
+	float: right;
+	width: 400px;
+}
+
+/* 天气 */
+#all_weather{
+	display: inline-block;
+	margin-left: 20px;
+	margin-right: 10px;
+	position: relative;
+}
+
+#weather_dt{
+	width: 550px;
+	height: 220px;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 5px #ccc;
+	position: absolute;
+	top: 20px;
+	display: none;
+	background-color: #fff;
+	z-index: 1000;
+}
+
+.wea_set{
+	display: inline-block;
+	color: #999;
+	float: right;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+#all_weather:hover #weather_dt{
+	display: block;
+}
+/* 今日天气 */
+#today{
+	width: 500px;
+	height: 30px;
+	border-bottom: 1px solid #dcdcdc;
+	margin-left: 25px;
+
+}
+#today p{
+	display: inline-block;
+	line-height: 30px;
+	color: #999;
+}
+#today a{
+	display: inline-block;
+	line-height: 30px;
+	text-decoration: none;
+	color: #38f;
+	margin-left: 20px;
+}
+/* 天气总面板 */
+.all_future{
+	margin-left: 25px;
+}
+/* 未来天气 */
+.future{
+	width: 100px;
+	height: 170px;
+	float: left;
+	text-align: center;
+}
+.future p{
+	margin-top: 5px;
+	text-align: center;
+}
+.future img{
+	margin-top: 10px;
+}
+
+#wrapper{
+	min-width: 1000px;
+	height: 80%;
+	position: relative;
+}
+
+.content {
+	top: 70px;
+	text-align: center;
+	position: relative;
+	width: 660px;
+	height: 200px;
+	margin:0 auto;
+}
+
+/* logo div */
+#img_logo {
+	width: 220px;
+}
+
+#form {
+	margin: 22px auto 0px;
+}
+
+/* 搜索框外围 包括搜索框和相机图标 */
+#search{
+	float: right;
+	position: relative;
+	border: 1px solid #b6b6b6;
+}
+
+/* 搜索框 */
+#wd_search{
+	width: 545px;
+    height: 26px;
+	padding:5px;
+	border: 0;
+	line-height: 26px;
+}
+
+/* 相机小图标 */
+#pic_search{
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	background-image: url(../img/camera_new_5606e8f.png);
+	right:10px;
+	top: 8px;
+	cursor: pointer;
+}
+
+#pic_search:hover{
+	background-image: url(../img/camera_new_5606e8f_blue.png);
+
+}
+
+/* 百度一下按钮定位 */
+#btn_search{
+	float: right;
+}
+
+/* 百度一下按钮样式 */
+#btn {
+	width: 100px;
+    height: 37px;
+    border: none;
+    background: #3385ff;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#btn:hover {
+	background-color: #1274fc;
+    box-shadow: 0 2px 2px #ccc;
+}
+
+/* 手机百度和二维码 */
+#shouji_baidu {
+	width: 60px;
+	text-align: center;
+	position: absolute;
+	bottom: 50px;
+	left:50%;
+	margin-left: -30px;
+}
+
+/* 手机百度 */
+#shouji_baidu p{
+	line-height: 23px;
+}
+
+/* 二维码 */
+#qr_code{
+	text-align: center;
+	height: 60px;
+}
+
+/* 设置和下方弹出框之间的连接div */
+.narrow {
+    width: 15px;
+    height: 15px;
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -5px;
+}
+
+/* 设置按钮的样式 */
+.setting_div{
+	-webkit-display:inline;
+	-moz-display:inline;
+	-o-display:inline;
+	-ms-display:inline;
+	_display:inline;
+	display: inline;
+
+	font-size: 13px;
+	margin-left: 15px;
+	line-height: 24px;
+	text-decoration: underline;
+}
+
+/* 设置弹出框 */
+.settings{
+	width: 70px;
+	height: 95px;
+	text-align: center;
+	border: 1px solid #ccc;
+	position: absolute;
+	right: 70px;
+    top: 25px;
+	box-shadow: 2px 2px 5px #ccc;
+	background-color: #fff;
+}
+
+.settings a {
+	text-decoration: none;
+	color: black;
+	line-height: 20px;
+	width: 100%;
+	margin: 0;
+	display: inline-block;
+}
+
+/* 光标悬停到链接上变色 */
+.settings a:hover{
+	background-color: #3385ff;
+}
+
+/* 初始不可见 */
+.setting_div div {
+	-webkit-display:none;
+	-moz-display:none;
+	-o-display:none;
+	-ms-display:none;
+	_display:none;
+	display: none;
+}
+
+/* 光标移至设置，可见 */
+.setting_div:hover div{
+	-webkit-display:block;
+	-moz-display:block;
+	-o-display:block;
+	-ms-display:block;
+	_display:block;
+	display: block;
+}
+
+/* 更多产品 */
+.more_div{
+	-webkit-display:inline-block;
+	-moz-display:inline-block;
+	-o-display:inline-block;
+	-ms-display:inline-block;
+	_display:inline-block;
+	display: inline-block;
+
+	font-size: 13px;
+	margin-left: 15px;
+	line-height: 24px;
+	width: 65px;
+	text-align: center;
+	color: white;
+	background-color: #38f;
+	position: absolute;
+	right: 10px;
+}
+
+/* 侧边栏 不可见 */
+.sidebar {
+	position: absolute;
+	width: 75px;
+	right: -10px;
+	padding-top: 20px;
+	top:-10px;
+	text-align: center;
+	font-family: "yahei";
+	background-color: #f9f9f9;
+
+	-webkit-display:none;
+	-moz-display:none;
+	-o-display:none;
+	-ms-display:none;
+	_display:none;
+	display: none;
+
+	z-index: 100;
+	border-left: 1px solid #ccc;
+}
+
+.sidebar a{
+	text-decoration: none;
+	color: black;
+}
+
+.sidebar div{
+	height: 100px;
+}
+
+.sidebar div img{
+	margin-bottom: 5px;
+	margin-top: 20px;
+}
+
+.footer {
+	height: 50px;
+    position: absolute;
+    top: 850px;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    color: #999;
+    margin-bottom: 30px;
+}
+
+/* 底部各个链接的样式 */
+.a{
+	line-height: 24px;
+	float: left;
+	color:black;
+	font-size: 13px;
+	font-weight: 700; 
+	margin-left: 15px;
+
+}
+
+.a1{
+	line-height: 24px;
+	float: left;
+	color: black;
+	font-size: 13px;
+	margin-left: 15px;
+}
+.a2{
+	color: #999;
+	margin-left: 20px;
+	line-height: 50px;
+}
+
+.a3{
+	color: #999;
+	margin-left: 20px;
+}
+.setfrontpage{
+	color: #999;
+	margin-left: 0px;
+	line-height: 50px;
+}
+
+.footer p {
+	text-align: center;
+}
+
+/* 以下两个元素在大屏下不展示 */
+.img_news_panel{
+	display: none;
+}
+.img-link-panel{
+	display: none;
+}
+
+#select-panel{
+	width: 900px;
+	height: 380px;
+	border: 1px solid #e6e6e6;
+	margin: 0 auto;
+	margin-top: 90px;
+	background-color: #fff;
+	opacity: 0.8;
+}
+
+ul li{
+	list-style: none;
+}
+
+#select-head{
+	height: 40px;
+	border-bottom: 1px solid #e6e6e6;
+}
+#select-head li:hover{
+	background-color: #e6e6e6;
+}
+
+#select-head li{
+	text-align: center;
+	width: 80px;
+	height: 28px;
+	background-color: #fff;
+	float: left;
+	font-size: 14px;
+	padding-top: 12px;
+	cursor: pointer;
+}
+#select-head #my-focus{
+	width: 120px;
+}
+#select-head li.tabIn{
+	color: #fff;
+	background-color: #999999;
+	font-size: 15px;
+}
+
+#to-top{
+	width: 45px;
+	height: 45px;
+	position: fixed;
+	bottom: 100px;
+	right: 100px;
+	background-color: #fafafa;
+	padding:10px;
+	box-sizing: border-box;
+	border: 1px solid #e3e3e3;
+	cursor: pointer;
+	display: none;
+}
+
+#first-div{
+	width: 18px;
+	height: 18px;
+	background-color: #999;
+	transform: rotate(45deg);
+	margin: 5px auto;
+}
+
+#second-div{
+	width: 18px;
+	height: 18px;
+	background-color: #fafafa;
+	transform: rotate(45deg);
+	position: absolute;
+	left: 13px;
+	top: 19px;
+}
+
+#to-top-des{
+	width: 50px;
+	height: 20px;
+	position: fixed;
+	bottom: 145px;
+	right: 97px;
+	cursor: pointer;
+	color: #999;
+	display: none;
+}

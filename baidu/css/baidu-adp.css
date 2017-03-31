@@ -1,0 +1,252 @@
+.header .nav{
+	display: none;
+}
+body{
+	background-color: #f8f8f8;
+	display: flex;
+	flex-flow: column;
+	min-height: 100vh;
+	background: url("../img/wu.jpg")!important;
+}
+#wrapper{
+	min-width: 300px;
+	height: 80%;
+	position: relative;
+	flex: 1;
+}
+#weather{
+	font-size: 13px;
+	font-family: "Microsoft Yahei"
+}
+
+#login-bar{
+	position: absolute;
+    top: 8px;
+    right: 5%;
+    width: 25px;
+    height: 25px;
+    background-image: url("../img/login.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.content {
+	top: 50px;
+	text-align: center;
+	position: relative;
+	width: 90%;
+	margin:0 auto;
+}
+
+/* logo div */
+#img_logo {
+	width: 50%;
+}
+
+#form {
+	margin: 5% auto 0px;
+	width: 100%;
+	overflow: hidden;
+}
+
+/* 搜索框外围 包括搜索框和相机图标 */
+#search{
+	float: right;
+	position: relative;
+	border: 1px solid #b6b6b6;
+	width: calc(100% - 82px);
+}
+
+/* 搜索框 */
+#wd_search{
+	width: 97%;
+    height: 26px;
+	padding:5px;
+	border: 0;
+	line-height: 26px;
+}
+
+/* 相机小图标 */
+#pic_search{
+	position: absolute;
+	width: 18px;
+	height: 18px;
+	background-image: url(../img/camera_new_5606e8f.png);
+	right:10px;
+	top: 8px;
+	cursor: pointer;
+}
+
+/* 百度一下按钮定位 */
+#btn_search{
+	float: right;
+	width: 80px;
+}
+
+/* 百度一下按钮样式 */
+#btn {
+	width: 100%;
+    height: 37px;
+    border: none;
+    background: #3385ff;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/* 搜索框下的图片链接 */
+.img-link-panel{
+	margin: 3% auto 0px;
+	width: 100%;
+	overflow: hidden;
+}
+
+/* 图片链接样式 */
+.img-link{
+	display: inline-block;
+	width: 14%;
+	font-size: 14px;
+	color:#999;
+}
+.img-link-panel a{
+	text-decoration: none;
+}
+
+/* 背景图标 */
+.first {
+	background: url(../img/ns_diff_color_v2_5abf864a.png) no-repeat;
+    background-position: 0px -264px;
+    background-size: 22px 528px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 0 auto;
+}
+
+.second{
+	background: url(../img/ns_diff_color_v2_5abf864a.png) no-repeat;
+    background-position: 0px -396px;
+    background-size: 22px 528px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 0 auto;	
+}
+
+.third {
+	background: url(../img/ns_diff_color_v2_5abf864a.png) no-repeat;
+    background-position: 0px -330px;
+    background-size: 22px 528px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 0 auto;
+}
+
+.fourth {
+	background: url(../img/ns_diff_color_v2_5abf864a.png) no-repeat;
+    background-position: 0px -462px;
+    background-size: 22px 528px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 0 auto;
+}
+
+.fifth {
+	background: url(../img/ns_diff_color_v2_5abf864a.png) no-repeat;
+    background-position: 0px -418px;
+    background-size: 22px 528px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 0 auto;
+}
+
+.sixth {
+	background: url(../img/ns_diff_color_v2_5abf864a.png) no-repeat;
+    background-position: 0px -308px;
+    background-size: 22px 528px;
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 0 auto;
+}
+
+/* 图片新闻面板 */
+.img_news_panel{
+	margin: 15% auto 0px;
+    padding-top: 10px;
+}
+.img_news_panel hr{
+	width: 90%;
+	color: #999;
+}
+/* 图片新闻面板的第一大行 */
+.img_news_line{
+	width: 90%;
+    margin: 0 5%;
+}
+.img_new{
+	display: inline-block;
+	width: 31%;
+}
+.img_new img{
+	width: 100%;
+}
+.subtitle{
+	font-size: 13px;
+	color: #919191;
+	margin: 0 auto;
+}
+
+.footer {
+    top: 600px;
+    text-align: center;
+    width: 90%;
+    margin: 50px auto;
+    color: #999;
+    font-size: 12px;
+}
+
+/* 底部各个链接的样式 */
+.a{
+	line-height: 24px;
+	float: left;
+	color:black;
+	font-size: 12px;
+	font-weight: 700; 
+	margin-left: 5px;
+
+}
+
+.a1{
+	line-height: 24px;
+	float: left;
+	color: black;
+	font-size: 12px;
+	margin-left: 15px;
+}
+.a2{
+	color: #999;
+	margin-left: 5px;
+	line-height: 20px;
+	font-size: 12px;
+}
+
+.a3{
+	display: none;
+}
+.setfrontpage{
+	color: #999;
+	margin-left: 0px;
+	line-height: 20px;
+	font-size: 12px;
+}
+
+#other,#skin_select,#select-panel,#shouji_baidu,#to-top-des, #weather_dt{
+	display: none;
+}
+
+.footer p {
+	text-align: center;
+}

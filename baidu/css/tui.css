@@ -1,0 +1,63 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+#tuijian-html{
+	margin:10px 30px;
+}
+
+#left{
+	float: left;
+	width: 500px;
+}
+
+.pic{
+	float: left;
+	width: 500px;
+	margin-bottom: 20px;
+}
+
+.pic div{
+	float: left;
+	margin-right: 5px;
+
+}
+
+.pic div a img{
+	width: 150px;
+}
+.title{
+	font-size: 16px;
+	font-weight: 700;
+}
+.des{
+	clear: left;
+	font-size: 12px;
+	color: #999;
+}
+
+#hotpot{
+	float:right;
+	width: 300px;
+}
+
+#hotpot dl{
+	float:left;
+	width: 150px;
+}
+
+#hotpot dl dd{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+#time-hot{
+	font-size: 16px;
+	font-weight: 500px;
+}
